@@ -1,0 +1,188 @@
+.wrap {
+  width: 200px;
+  margin: 0 auto; }
+
+.turn {
+  width: 60px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #cccccc; }
+
+input {
+  opacity: 0; }
+
+.turn_off {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  -webkit-transition: margin-left 0.4s; }
+
+input:checked + .turn {
+  background: green; }
+
+input:checked + .col_blue {
+  background: blue; }
+
+input:checked + .col_red {
+  background: red; }
+
+input:checked + .col_yellow {
+  background: yellow; }
+
+input:checked + .turn .turn_off {
+  margin-left: 30px; }
+
+.toggle_checkbox .trank {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cccccc; }
+
+.toggle_checkbox .trank .trank_off {
+  width: 10px;
+  height: 6px;
+  margin-top: 5px;
+  margin-left: 4px;
+  border-left: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+  -webkit-transform: rotate(-45deg);
+  display: none; }
+
+.toggle_checkbox input:checked + .trank {
+  background: green; }
+  .toggle_checkbox input:checked + .trank .trank_off {
+    display: block; }
+
+.toggle_checkbox input:checked + .col_red {
+  background: red; }
+  .toggle_checkbox input:checked + .col_red .trank_off {
+    display: block; }
+
+.toggle_checkbox input:checked + .col_blue {
+  background: blue; }
+  .toggle_checkbox input:checked + .col_blue .trank_off {
+    display: block; }
+
+.toggle_checkbox input:checked + .col_yellow {
+  background: yellow; }
+  .toggle_checkbox input:checked + .col_yellow .trank_off {
+    display: block; }
+
+.toggle_checkbox_circle .trank {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid #cccccc; }
+
+.toggle_checkbox_circle .trank .trank_off {
+  width: 18px;
+  height: 10px;
+  margin-top: 5px;
+  margin-left: 3px;
+  border-left: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+  -webkit-transform: rotate(-45deg);
+  display: none; }
+
+.toggle_checkbox_circle input:checked + .trank {
+  background: green; }
+  .toggle_checkbox_circle input:checked + .trank .trank_off {
+    display: block; }
+
+.toggle_checkbox_circle .trank {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid #cccccc; }
+
+.toggle_large .trank {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid #cccccc; }
+
+.toggle_checkbox_circle .trank .trank_off {
+  width: 9px;
+  height: 5px;
+  margin-left: 5px;
+  border-left: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+  -webkit-transform: rotate(-45deg);
+  display: none; }
+
+.toggle_checkbox_circle input:checked + .trank {
+  background: green; }
+  .toggle_checkbox_circle input:checked + .trank .trank_off {
+    display: block; }
+
+/*# sourceMappingURL=btn.css.map */
+
+
+/*
+//圆角开关按钮结构
+//<label class="toggle_radio">
+//<input type="checkbox">
+//<div class="turn">
+//<div class="turn_off"></div>
+//</div>
+//</label>
+
+//正方形对号结构
+//<label class="toggle_checkbox">
+//<input type="checkbox">
+//<div class="trank">
+//<div class="trank_off"></div>
+//</div>
+//</label>
+
+//圆形形对号结构
+//<label class="toggle_checkbox_circle toggle_large">
+//<input type="checkbox">
+//<div class="trank">
+//<div class="trank_off"></div>
+//</div>
+//</label>
+
+//多选按钮结构
+ <label class="toggle_checkbox_circle">
+            <input type="checkbox">
+            <span class="trank">
+                <div class="trank_off"></div>
+            </span>
+        </label>
+        <label class="toggle_checkbox_circle">
+            <input type="checkbox">
+            <span class="trank">
+                <div class="trank_off"></div>
+            </span>
+        </label>
+        <label class="toggle_checkbox_circle">
+            <input type="checkbox">
+            <span class="trank">
+                <div class="trank_off"></div>
+            </span>
+        </label>
+
+//单选按钮结构
+//<label class="toggle_checkbox_circle">
+//<input type="radio" name="same">
+//<span class="trank">
+//<div class="trank_off"></div>
+//</span>
+//</label>
+//<label class="toggle_checkbox_circle">
+//<input type="radio" name="same">
+//<span class="trank">
+//<div class="trank_off"></div>
+//</span>
+//</label>
+//<label class="toggle_checkbox_circle">
+//<input type="radio" name="same">
+//<span class="trank">
+//<div class="trank_off"></div>
+//</span>
+//</label>
+*/
